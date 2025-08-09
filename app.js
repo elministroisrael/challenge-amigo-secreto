@@ -10,5 +10,15 @@ let amigos=[];
         return;
  }
 
-        
+        // Agregar al array
+      amigos.push(nombre);
+
+      // Actualizar la lista
+      const lista = document.getElementById('listaAmigos');
+      const nuevoElemento = document.createElement('li');
+      nuevoElemento.textContent = nombre;
+      lista.appendChild(nuevoElemento);
+
+      // Limpiar el campo de entrada
+      input.value = '';
 }
